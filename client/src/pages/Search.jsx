@@ -102,8 +102,8 @@ export default function Search() {
 
   return (
     <div className="flex flex-col">
-      <div className="p-7 m-auto">
-        <form className="flex flex-row gap-10" onSubmit={handleSubmit}>
+      <div className="p-7 m-auto min-h-screen">
+        <form className="flex flex-col gap-2 md:flex-row md:gap-10" onSubmit={handleSubmit}>
           <div className="flex items-center gap-2">
             <Select  onChange={handleChange} value={sidebarData.sort} id="sort">
               <option value="desc">Latest</option>
@@ -117,11 +117,11 @@ export default function Search() {
               id="category"
             >
               <option value="uncategorized">select category</option>
-              <option value="uncategorized">Tech news</option>
-              <option value="reactjs">Artificial intelligence</option>
-              <option value="javascript">Programming languages</option>
-              <option value="nextjs">Guides and tutorials</option>
-              <option value="nextjs">Tips and tricks</option>
+              <option value="tech news">Tech news</option>
+              <option value="Ai">Artificial intelligence</option>
+              <option value="programming languages">Programming languages</option>
+              <option value="tutorials">Guides and tutorials</option>
+              <option value="tips&trics">Tips and tricks</option>
             </Select>
           </div>
           <Button type="submit" outline gradientDuoTone="purpleToPink">

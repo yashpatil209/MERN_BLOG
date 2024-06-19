@@ -15,7 +15,7 @@ export default function Home() {
   }, []);
   return (
     <div>
-      <div className="flex flex-row gap-6 p-28 px-1 max-w-6xl mx-auto ">
+      <div className="flex flex-col md:flex-row gap-6 p-10 md:p-28 px-1 max-w-6xl mx-auto ">
         <div className="m-auto w-2/3">
           <h1 className="text-2xl mb-5 font-bold lg:text-5xl">Welcome to Our Blog!</h1>
           <p className=" text-sm sm:text-xl">
@@ -26,7 +26,7 @@ export default function Home() {
             crafted to engage.
           </p>
         </div>
-        <div>
+        <div className="">
           <img
             src="https://res.cloudinary.com/dolej50tb/image/upload/v1718736891/Blog/undraw_world_re_768g_fyfqmm.svg"
             alt=""
