@@ -102,7 +102,7 @@ export default function Search() {
 
   return (
     <div className="flex flex-col">
-      <div className="p-7 m-auto min-h-screen">
+      <div className="p-7 m-auto">
         <form className="flex flex-col gap-2 md:flex-row md:gap-10" onSubmit={handleSubmit}>
           <div className="flex items-center gap-2">
             <Select  onChange={handleChange} value={sidebarData.sort} id="sort">
@@ -129,7 +129,7 @@ export default function Search() {
           </Button>
         </form>
       </div>
-      <div className="w-full">
+      <div className="w-full min-h-screen">
         <div className="p-7 flex flex-wrap gap-7 justify-center">
           {!loading && posts.length === 0 && (
             <p className="text-xl text-gray-500">No posts found.</p>

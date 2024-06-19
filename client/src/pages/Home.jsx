@@ -14,10 +14,10 @@ export default function Home() {
     fetchPosts();
   }, []);
   return (
-    <div>
-      <div className="flex flex-col md:flex-row gap-6 p-10 md:p-28 px-1 max-w-6xl mx-auto ">
-        <div className="m-auto w-2/3">
-          <h1 className="text-2xl mb-5 font-bold lg:text-5xl">Welcome to Our Blog!</h1>
+    <div className="">
+      <div className="flex flex-col md:flex-row gap-10 p-10 md:py-28  max-w-6xl mx-auto ">
+        <div className="m-auto [@media(max-width:768px)]:text-center  md:w-2/3">
+          <h1 className="text-2xl mb-5 font-bold  lg:text-4xl">Welcome to Our Blog!</h1>
           <p className=" text-sm sm:text-xl">
             Dive into a world of insightful articles and tutorials on topics
             such as web development, software engineering, and programming
