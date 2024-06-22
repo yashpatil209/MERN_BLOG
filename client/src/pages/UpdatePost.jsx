@@ -129,10 +129,12 @@ export default function UpdatePost() {
             }
             value={formData.category}
           >
-            <option value='uncategorized'>Select a category</option>
-            <option value='javascript'>JavaScript</option>
-            <option value='reactjs'>React.js</option>
-            <option value='nextjs'>Next.js</option>
+            <option value="uncategorized">select category</option>
+              <option value="tech news">Tech news</option>
+              <option value="Ai">Artificial intelligence</option>
+              <option value="programming languages">Programming languages</option>
+              <option value="tutorials">Guides and tutorials</option>
+              <option value="tips&trics">Tips and tricks</option>
           </Select>
         </div>
         <div className='flex gap-4 items-center justify-between border-4 border-teal-500 border-dotted p-3'>
